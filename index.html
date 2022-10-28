@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5c6136eaff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="container">
+        <h1>Create An Account | Zuri</h1>
+        <div class="signupbox">
+          <article class="leftside">
+            <form method="POST" action="" autocomplete="on">
+              <label for="firstname">Firstname:</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="firstname"
+                autofocus
+                required
+              />
+              <label for="lastname">Lastname:</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="lastname"
+                required
+              />
+              <label for="Phone Number">Phone Number:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="0805-555-5555"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                maxlength="13"
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                pattern=".+@gmail\.com"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                size="64" 
+                maxLength="64"
+                required
+              />
+              <label for="gender">Choose your Gender:</label>
+              <select name="gender" id="gender" class="select" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <label for="birthday">Date of birth</label>
+              <input
+                type="date"
+                name="dateofbirth"
+                id="birthday"
+                placeholder="Date of birth"
+                required
+              />
+              <label for="favcolor">Favourite Colour:</label>
+              <input type="color" value="#ff0000" required />
+          
+              <button type="submit">REGISTER</button>
+      
+            </form>
+          </article>
+          <article class="rightside">
+            <a href="" class="fb-link"
+              ><i class="fa-brands fa-facebook-f"></i>Connect with Facebook</a
+            >
+            <a href="" class="tw-link"
+              ><i class="fa-brands fa-twitter"></i></i>Connect with Twitter</a
+            >
+            <a href="" class="gb-link"><i class="fa-brands fa-github"></i>Connect with Github</a>
+            <a href="" class="g-link"><i class="fa-brands fa-google"></i>Connect with Google</a>
+            <div class="login-msg">
+              I already have an account? 
+              <a href="login.html" class="touch">Login Now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
